@@ -1,0 +1,786 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Lobster&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lobster", cursive;
+  font-family: "Heebo", sans-serif;
+  list-style: none;
+}
+body {
+  width: 100vw;
+  height: 100%;
+}
+.contain {
+  width: 100vw;
+  height: 100%;
+}
+.container {
+  position: relative;
+  width: 99%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/*=========================MENU-TOP SECTION =================================*/
+.log-men {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: white;
+  padding-bottom: 5px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 111;
+}
+.log-men nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.log-men nav .logo img {
+  width: 80px;
+  height: 13px;
+}
+
+.log-men nav .menu ul {
+  display: flex;
+}
+.log-men nav .menu ul li {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.log-men nav .search {
+  flex-basis: 40%;
+  position: relative;
+}
+.log-men nav .search input {
+  width: 100%;
+  background: rgb(228, 228, 228);
+  padding: 3px 3px 3px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  transition: all 0.3s ease;
+}
+.log-men nav .search input.hidden {
+  visibility: hidden;
+}
+.log-men nav .search i {
+  position: absolute;
+  right: 5px;
+  margin: auto;
+  top: 8px;
+  cursor: pointer;
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+/*=========================H-RULE SECTION =================================*/
+.log-men #rule {
+  display: block;
+  opacity: 0.5;
+}
+/*=========================HAMBURGER SECTION =================================*/
+.log-men nav .hamburger i {
+  font-size: 20px;
+  color: rgb(150, 4, 150);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .hamburger i:hover {
+  transform: scale(1.1);
+}
+.hamburger {
+  display: none;
+}
+/*=========================MENU BELOW SECTION =================================*/
+.sho-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sho-sec .sho {
+  width: 20px;
+  height: 15px;
+}
+.sho-sec .sho img {
+  width: 100%;
+  height: 100%;
+}
+.sho-sec .sho-lin ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sho-sec .sho-lin ul li {
+  margin: 0 25px;
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: rgb(228, 228, 228);
+  padding-top: 100px;
+}
+/*=========================HEAD SECTION =================================*/
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+header .head-img,
+.zsta-sec .zss .zik-now .zik .zik-img {
+  width: 50%;
+  height: 100%;
+  flex-basis: 50%;
+}
+header .head-img img,
+.zsta-sec .zss .zik-now .zik img {
+  width: 100%;
+  height: 100%;
+}
+header .head-det {
+  width: 50%;
+  margin: auto 20px;
+  line-height: 35px;
+}
+header .head-det p {
+  font-size: 0.7rem;
+  color: rgb(150, 4, 150);
+  font-weight: 400;
+}
+header .head-det h2,
+.zsta-sec .zss .zik-now .zik .zik-det h2 {
+  line-height: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 280px;
+}
+/*=========================SUB-HEAD SECTION =================================*/
+.sub-head,
+.video-sec .trend-sec,
+.video-sec .ziko-sec {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: auto;
+  margin: 20px 0;
+}
+.sub-head .card,
+.caro-sec .card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: 250px;
+}
+.sub-head .card-img,
+.video-sec .trend-sec .card-img,
+.video-sec .ziko-sec .card-img,
+.caro-sec .card .card-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.sub-head .card-img img,
+.video-sec .trend-sec .card-img img,
+.video-sec .ziko-sec .card-img img,
+.caro-sec .card img {
+  width: 100%;
+  height: 100%;
+}
+.sub-head .card-det {
+  padding: 10px;
+}
+.sub-head .card-det p,
+.caro-sec .card-det p {
+  font-size: 0.6rem;
+  color: rgb(150, 4, 150);
+  font-weight: 400;
+  line-height: 2rem;
+}
+.sub-head .card-det h2,
+.caro-sec .caro-head .card-det h2 {
+  font-size: 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+}
+/*=========================BUTTON SECTION =================================*/
+.btn,
+.zss .zstas .btn {
+  position: relative;
+  border: 1px solid rgb(150, 4, 150);
+  outline: none;
+  border-radius: 5px;
+  color: rgb(150, 4, 150);
+  padding: 7px 30px;
+  display: block;
+  margin: 50px auto;
+  background: transparent;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+  background: rgb(150, 4, 150);
+  color: white;
+}
+/*=========================ZIKOKO VIDEO SECTION =================================*/
+.video-sec {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  background: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+.video-sec h2 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.video-sec h3 {
+  color: rgb(255, 183, 0);
+  line-height: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+.video-sec .trend-sec .card-img {
+  height: 100px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.video-sec .trend-sec .card-det h2 {
+  font-size: 0.7rem;
+  margin: 15px 0;
+}
+.video-sec .ziko-sec .card-img {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  height: 170px;
+}
+.video-sec .ziko-sec .card-det {
+  margin: 10px 20px;
+}
+.video-sec .ziko-sec .card-det h2 {
+  font-size: 1.2rem;
+}
+.video-sec .ziko-sec .card-det p {
+  margin-top: 10px;
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+/*=========================OWL-CAROUSEL SECTION =================================*/
+.caro-sec {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: rgb(228, 228, 228);
+  padding: 30px 50px;
+}
+.caro-sec .caro-head h2 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+}
+.caro-sec .card-det {
+  padding-left: 20px;
+}
+.caro-sec .caro-head .card {
+  width: 160px;
+}
+.caro-sec .caro-head .owl-carousel {
+  position: relative;
+}
+.caro-sec .caro-head .owl-nav span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.caro-sec .caro-head .owl-nav span {
+  display: block;
+  font-size: 10rem;
+  color: white;
+}
+.caro-sec .caro-head .owl-nav .owl-prev {
+  left: -10%;
+}
+.caro-sec .caro-head .owl-nav .owl-next {
+  right: -8%;
+}
+/*=========================ZIKOKO STACK SECTION =================================*/
+.zsta-sec {
+  position: relative;
+  width: 100%;
+  background: rgb(247, 242, 242);
+  padding: 20px 10px;
+}
+.zsta-sec .zs {
+  width: 100%;
+}
+
+.zsta-sec .zss h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.zsta-sec .zss p {
+  opacity: 0.7;
+}
+.zsta-sec .zss .zstas {
+  position: relative;
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.zss .zstas .zs {
+  text-align: center;
+  overflow: hidden;
+}
+.zss .zstas .zs img {
+  height: 105px;
+  width: 105px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.zss .zstas .zs p {
+  color: rgb(111, 2, 111);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+/*=========================ZIKOKO NOW SECTION =================================*/
+.zsta-sec .zss .zik-now {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.zsta-sec .zss .zik-now .zik {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+}
+.zss .zik-now .zik .zik-det .zik-img {
+  width: 100%;
+}
+.zss .zik-now .zik .zik-det {
+  margin: 5px 20px;
+  line-height: 20px;
+  flex-basis: 50%;
+}
+.zsta-sec .zss .zik-now .zik .zik-det p {
+  color: rgb(113, 2, 113);
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+.zsta-sec .zss .zik-now .zik .zik-det h2 {
+  font-size: 0.7rem;
+  line-height: 12px;
+  max-width: 280px;
+}
+/*=========================FORM SECTION =================================*/
+.form-sec {
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  background: white;
+  border: 15px solid rgba(128, 0, 128, 0.489);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  padding: 50px;
+}
+.form-sec .form {
+  flex-basis: 60%;
+}
+.form-sec .form h2 {
+  font-size: 1.8rem;
+  color: rgba(128, 0, 128, 0.694);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  max-width: 250px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+.form-sec .form .in {
+  display: block;
+  width: 100%;
+}
+.form-sec .form .in input {
+  border: 1px solid rgba(128, 0, 128, 0.53);
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 7px 25px;
+}
+.form-sec .form .in button {
+  background: rgba(128, 0, 128, 0.735);
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 7px 25px;
+  color: white;
+  outline: none;
+  border: none;
+  transition: 0.3s ease;
+}
+.form-sec .form .in input:focus {
+  border: 1px solid rgba(128, 0, 128, 0.53);
+  outline: none;
+}
+.form-sec .form .in button:hover {
+  transform: scale(1.1);
+}
+.form-sec .soc {
+  align-self: flex-end;
+  text-align: center;
+  padding: 20px;
+  margin-right: auto;
+}
+.form-sec .soc h2 {
+  font-size: 0.7rem;
+}
+.form-sec .so i {
+  color: purple;
+  margin: 0 5px;
+}
+/*=========================WARN SECTION =================================*/
+.warn {
+  position: relative;
+  background: rgb(255, 176, 6);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  height: auto;
+}
+.warn p {
+  font-size: 1.3rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/*=========================FOOTER SECTION =================================*/
+footer {
+  background: black;
+  position: relative;
+  color: white;
+}
+.f-det {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 15px;
+}
+.f-de .f1 {
+  flex-basis: 20%;
+}
+.f-det .f1 .f-log img {
+  width: 140px;
+  height: 55px;
+}
+.f-det .f1 .f-so i {
+  padding: 10px;
+  margin: 10px 5px 15px 0;
+  background: rgb(69, 64, 64);
+  font-size: 0.8rem;
+}
+.f-det .f1 p {
+  font-size: 0.6rem;
+  opacity: 0.7;
+  max-width: 170px;
+}
+.f-det .f2 {
+  margin: 0 auto auto 80px;
+  display: flex;
+}
+.f-det .f2 .com h2,
+.f-det .f2 .leg h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-right: 70px;
+}
+.f-det .f2 .com a,
+.f-det .f2 .leg a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.639);
+  font-size: 0.6rem;
+  line-height: 20px;
+}
+/*=========================MEDIA 750=================================*/
+@media (max-width: 750px) {
+  .log-men nav .menu.active {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    background: white;
+    justify-content: space-around;
+    z-index: 30000 !important;
+    border-top: 1px solid purple;
+    padding: 20px;
+    display: block;
+    transition: 0.3s;
+  }
+  .log-men nav .menu ul li {
+    padding: 10px 40px;
+    margin: 0 auto;
+  }
+  .log-men nav .menu ul li:hover {
+    background: purple;
+    color: white;
+  }
+  .log-men nav {
+    justify-content: flex-end;
+  }
+  .log-men nav .logo img {
+    margin-right: 50px;
+    transform: scale(0.8);
+  }
+  .log-men nav .hamburger {
+    display: flex;
+    position: absolute;
+    left: 10px;
+  }
+  .log-men nav .menu {
+    display: none;
+  }
+  .sho-sec {
+    justify-content: space-between;
+  }
+  header {
+    flex-direction: column;
+  }
+  header .head-img {
+    width: 80%;
+  }
+  header .head-det {
+    width: 80%;
+  }
+  header .head-det h2 {
+    max-width: 80%;
+  }
+  .sub-head,
+  .video-sec .trend-sec,
+  .video-sec .ziko-sec {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+  }
+
+  .zsta-sec .zss .zstas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .zsta-sec .zss h2,
+  .zsta-sec .zss .zik-now h2 {
+    font-size: 1.6rem;
+  }
+  .zsta-sec .zss p {
+    font-size: 0.7rem;
+  }
+  .zsta-sec .zss .zik-now {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .zsta-sec .zss .zik-now h2 {
+  }
+  .form-sec {
+    flex-direction: column;
+    padding: 10px;
+    border: 10px solid rgba(128, 0, 128, 0.489);
+  }
+  .form-sec .form {
+    width: 100%;
+  }
+  .form-sec .form h2 {
+    max-width: 100%;
+  }
+  .form-sec .form .in input,
+  .form-sec .form .in button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-sec .form .in button:hover {
+    letter-spacing: 15px;
+    transform: scale(0.9);
+  }
+  .form-sec .soc {
+    margin: 0 auto;
+    transform: scale(0.7);
+  }
+  .warn p {
+    max-width: 400px;
+    font-size: 1.6rem;
+  }
+  footer .f-det {
+    flex-direction: column;
+    align-items: center;
+  }
+  .f-det .f1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .f-det .f2 {
+    margin: 20px auto;
+  }
+  .f-det .f1 p {
+    max-width: 100%;
+  }
+  .f-det .f2 .com,
+  .f-det .f2 .leg {
+    margin: 0 40px;
+  }
+}
+/*=========================MEDIA 400=================================*/
+@media (max-width: 400px) {
+  .log-men nav .menu ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .log-men nav .menu ul li {
+    margin: 30px 0;
+  }
+
+  .log-men nav {
+    justify-content: flex-end;
+  }
+  .log-men nav .logo img {
+    margin-right: 10px;
+    transform: scale(0.8);
+  }
+  .log-men nav .hamburger {
+    display: flex;
+    position: absolute;
+    left: 10px;
+  }
+  .log-men nav .menu {
+    display: none;
+  }
+  .sho-sec {
+    justify-content: space-between;
+  }
+  header {
+    flex-direction: column;
+  }
+  header .head-img {
+    width: 80%;
+  }
+  header .head-det {
+    width: 80%;
+  }
+  header .head-det h2 {
+    max-width: 80%;
+  }
+  .sub-head,
+  .video-sec .trend-sec,
+  .video-sec .ziko-sec {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 30px;
+  }
+  .zsta-sec .zss {
+    width: 100%;
+    text-align: center;
+  }
+
+  .zsta-sec .zss .zstas {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px auto;
+  }
+  .zss .zstas {
+    width: 220px;
+  }
+  .zss .zstas .zs img {
+    width: 100%;
+  }
+  .zsta-sec .zss h2,
+  .zsta-sec .zss .zik-now h2 {
+    font-size: 1.6rem;
+  }
+  .zsta-sec .zss p {
+    font-size: 0.7rem;
+  }
+  .zsta-sec .zss .zik-now {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 20px;
+  }
+  .zsta-sec .zss .zik-now h2 {
+  }
+  .form-sec {
+    flex-direction: column;
+    padding: 10px;
+    border: 10px solid rgba(128, 0, 128, 0.489);
+  }
+  .form-sec .form {
+    width: 100%;
+  }
+  .form-sec .form h2 {
+    max-width: 100%;
+  }
+  .form-sec .form .in input,
+  .form-sec .form .in button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-sec .form .in button:hover {
+    letter-spacing: 15px;
+    transform: scale(0.9);
+  }
+  .form-sec .soc {
+    margin: 0 auto;
+    transform: scale(0.7);
+  }
+  .warn p {
+    max-width: 300px;
+    font-size: 1.9rem;
+  }
+  footer .f-det {
+    flex-direction: column;
+    align-items: center;
+  }
+  .f-det .f1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .f-det .f2 {
+    margin: 20px auto;
+  }
+  .f-det .f1 p {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .f-det .f2 .com,
+  .f-det .f2 .leg {
+    margin: 0 15px;
+  }
+}
